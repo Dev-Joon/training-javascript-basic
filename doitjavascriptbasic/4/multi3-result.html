@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #title{
+            border: 1px solid gray;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            overflow: hidden;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">value</h1>
+    <script type="text/javascript">
+        var randomValue = prompt();
+        if(randomValue){
+        if (randomValue % 3 != 0){
+            document.querySelector("#title").innerHTML = randomValue + "은 3의 배수가 아닙니다."
+        }
+        else{
+            document.querySelector("#title").innerHTML = randomValue + "은 3의 배수입니다."
+        }
+    }
+    else{
+        alert("입력을 취소하였습니다.");
+    }
+    </script>
+</body>
+</html>

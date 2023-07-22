@@ -1,0 +1,39 @@
+#container{
+    width: 500px;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 5em;
+    text-align: center;
+}
+
+#userName{
+    width: 400px;
+    height : 20px;
+}
+
+#btnInput{
+    width: 80px;
+    height : 2em;
+    float:right;
+}
+
+
+.del{
+    font-size: 20px;
+    text-align: center;
+    color:#ccc;
+    background: transparent;
+    float:right;
+    margin-right: 10px;
+}
+
+.del:hover{
+    color:#222;
+    cursor: pointer;
+}
+
+.del:active{
+    outline:0;
+}
